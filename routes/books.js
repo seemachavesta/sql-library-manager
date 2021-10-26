@@ -30,7 +30,6 @@ router.get('/new', (req, res) => {
 
 // post new book
 router.post('/new', asyncHandler(async (req, res) => {
-    console.log(req.body);
     let books;
     try{
         books = await Book.create(req.body);

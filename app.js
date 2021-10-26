@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-
+// starting homepage
 app.use('/', routes);
 app.use('/books', books);
 
